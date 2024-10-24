@@ -10,8 +10,8 @@ def create_qr(data, filename):
     qr.add_data(data)
     qr.make(fit=True)
 
-    img = qr.make_image(fill_color="black", back_color="white")
+    img = qr.make_image(fill_color="black", back_color="gold")
     img.save(filename)
 
 if __name__ == "__main__":
-    create_qr('https://localhost:5173', 'qr.png')
+    create_qr('https://vjdataquesters.vercel.app/events/tableauMastery', 'qr.png')
